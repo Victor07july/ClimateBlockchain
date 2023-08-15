@@ -21,6 +21,16 @@ type Asset struct {
 	AppraisedValue int    `json:"appraisedValue"`
 }
 
+// HC Air Temperature, IDentificador é o unitCode (não entra no struct)
+type HCAirTemperature struct {
+	Name           string `json:"name"`
+	Unit           string `json:"unit"`
+	AvgTemp        string `json:"avgtemp"`
+	MaxTemp        string `json:"maxtemp"`
+	MinTemp        string `json:"mintemp"`
+	UpdateTimeUnix string `json:"updatetimeunix"`
+}
+
 // InitLedger adds a base set of assets to the ledger
 func (s *SmartContract) InitLedger(ctx contractapi.TransactionContextInterface) error {
 	assets := []Asset{
@@ -185,3 +195,108 @@ func (s *SmartContract) GetAllAssets(ctx contractapi.TransactionContextInterface
 
 	return assets, nil
 }
+
+const compositeKey = ""
+
+// chave composta id e timestamp unix
+	func (s *SmartContract) InsertHCData(ctx contractapi.TransactionContextInterface, id string, name string, unit string, avgtemp string, maxtemp string, mintemp string, updatetimeunix string) error {
+		// exists, err := s.AssetExists(ctx, id)
+
+		hcairtemperature := HCAirTemperature{
+			Name:           name,
+			Unit:           unit,
+			AvgTemp:        avgtemp,
+			MaxTemp:        maxtemp,
+			MinTemp:        mintemp,
+			UpdateTimeUnix: updatetimeunix,
+		}
+
+		hcairtemperatureJSON, err := json.Marshal(hcairtemperature)
+		if err != nil {
+			return err
+		}
+
+		// chave composta
+		key, err := ctx.GetStub().CreateCompositeKey(compositeKey, []string{id, updatetimeunix})
+
+		return ctx.GetStub().PutState(key, hcairtemperatureJSON)
+	}
+
+	func (s *SmartContract) ReadHCData(ctx contractapi.TransactionContextInterface, id, updatetimeunix string) (*HCAirTemperature, error) {
+		// Crie a chave composta usando o id fornecido
+		key, err := ctx.GetStub().CreateCompositeKey(compositeKey, []string{id, updatetimeunix})
+		if err != nil {
+			return nil, err
+		}
+	
+		// Busque o valor associado à chave composta
+		value, err := ctx.GetStub().GetState(key)
+		if err != nil {
+			return nil, err
+		}
+	
+		if value == nil {
+			return nil, fmt.Errorf("Nenhum valor encontrado para a chave %s", key)
+		}
+	
+		var hcairtemperature HCAirTemperature
+		err = json.Unmarshal(value, &hcairtemperature)
+		if err != nil {
+			return nil, err
+		}
+	
+		return &hcairtemperature, nil
+	}
+	
+
+// ReadAsset returns the asset stored in the world state with given id.
+// func (s *SmartContract) ReadHCData(ctx contractapi.TransactionContextInterface, id string) ([]byte, error) {
+
+// 	var results []interface{}
+
+// 	resultsIterator, err := ctx.GetStub().GetStateByPartialCompositeKey(compositeKey, []string{id})
+
+// 	if err != nil {
+// 		return nil, err
+// 	}
+
+// 	defer resultsIterator.Close()
+
+// 	for resultsIterator.HasNext() {
+// 		kvResult, err := resultsIterator.Next()
+// 		if err != nil {
+// 			return nil, err
+// 		}
+// 		hcairtemperature := HCAirTemperature{}
+
+// 		err = json.Unmarshal(kvResult.Value, &hcairtemperature)
+// 		if err != nil {
+// 			return nil, err
+// 		}
+
+// 		result := struct {
+// 			HCKey          string `json:"hckey"`
+// 			UpdateTimeUnix string `json:"updatetimeunix"`
+// 		}{}
+
+// 		prefix, keyParts, err := ctx.GetStub().SplitCompositeKey(kvResult.Key)
+// 		if len(keyParts) < 2 {
+// 			result.UpdateTimeUnix = prefix
+// 		} else {
+// 			result.HCKey = keyParts[0]
+// 			result.UpdateTimeUnix = keyParts[1]
+// 		}
+
+// 		results = append(results, result)
+// 	}
+
+// 	hcairtemperatureJSON, err := json.Marshal(results)
+
+// 	if err != nil {
+// 		return nil, err
+// 	}
+
+// 	return hcairtemperatureJSON, err
+// 	//return ctx.GetStub().Success(hcairtemperatureJSON)
+
+// }

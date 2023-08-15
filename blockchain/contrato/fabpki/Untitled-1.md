@@ -1,0 +1,4 @@
+- puxar dados de medição do  http://www.sistema-alerta-rio.com.br/dados-meteorologicos/tabela-de-dados/
+- ver chave composta
+- cliente que puxa dados a cada 5 min
+- id numérico ao invés de nome da região

@@ -1,0 +1,1122 @@
+[
+    {
+        "name": {
+            "original": "00206C61",
+            "custom": "Campo Experimental"
+        },
+        "rights": "rw",
+        "info": {
+            "device_id": 7,
+            "device_name": "iMetos 3.3",
+            "uid": "2466C2065B32D261",
+            "firmware": "08.533.20210512",
+            "hardware": "29-0503",
+            "programmed": "2022.02.17 13:46",
+            "apn_table": 0,
+            "description": "iMetos 3.3, hw: 29-0503, fw: 08.533.20210512"
+        },
+        "dates": {
+            "min_date": "2018-05-17 00:02:56",
+            "max_date": "2023-08-03 08:00:11",
+            "created_at": "2019-02-11 10:53:16",
+            "last_communication": "2023-08-03 08:00:46"
+        },
+        "config": {
+            "scheduler": 16777215,
+            "timezone_offset": -240,
+            "precision_reduction": 0.2,
+            "measuring_interval": 5,
+            "logging_interval": 15,
+            "activity_mode": 0,
+            "fixed_transfer_interval": 30,
+            "x_min_transfer_interval": 0,
+            "rain_monitor": 15,
+            "water_level_monitor": 0,
+            "schedulerOld": "FFFFFF000000000000000000000000000000000000000000",
+            "emergency_sms_number": "5521988141054",
+            "frequent_measurement": false,
+            "gps_disabled": false,
+            "server_domain": "",
+            "server_url": "",
+            "server_port": "",
+            "sensor_settings": {
+                "4": "4",
+                "5": "4"
+            },
+            "frost_monitoring": {
+                "enabled": false
+            }
+        },
+        "position": {
+            "altitude": 412.28,
+            "geo": {
+                "coordinates": [
+                    -54.23834320802077,
+                    -13.31469151621821
+                ],
+                "type": "Point"
+            },
+            "timezoneCode": "America/Cuiaba"
+        },
+        "metadata": {
+            "last_battery": "6391"
+        },
+        "meta": {
+            "time": 1691049600,
+            "solarRadiation": 389,
+            "solarPanel": 9979,
+            "battery": 6790,
+            "lw": 0,
+            "airTemp": 26.77,
+            "rh": 38.02,
+            "soilTemp": 35.9,
+            "tensiometricAverage": 252,
+            "rain7d": {
+                "vals": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "sum": 0
+            },
+            "rain48h": {
+                "vals": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "sum": 0
+            },
+            "rain24h": {
+                "vals": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "sum": 0
+            }
+        },
+        "metaUnits": "metric",
+        "networking": {
+            "type": "WIFI",
+            "ssid": "XR_PUC_BNDES",
+            "meid": false,
+            "modem": {
+                "brand": "WIZnet",
+                "type": "GS1011",
+                "fwversion": "WizFi210__1.1.1.0(W)",
+                "mac_addr": "00:08:dc:55:fe:3f"
+            },
+            "rssi_pct": "82"
+        },
+        "warnings": {
+            "sensors": [],
+            "sms_numbers": []
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0020ED35",
+            "custom": "imetos eco 0020ED35"
+        },
+        "rights": "rw",
+        "info": {
+            "device_id": 7,
+            "device_name": "iMetos 3.3",
+            "uid": "2466C2065B32D5E2",
+            "firmware": "08.602.20220207",
+            "hardware": "29-0334",
+            "programmed": "",
+            "apn_table": 0,
+            "description": "iMetos 3.3, hw: 29-0334, fw: 08.602.20220207"
+        },
+        "dates": {
+            "min_date": "2022-03-17 13:00:01",
+            "max_date": "2022-06-15 15:00:01",
+            "created_at": "2022-03-17 15:23:22",
+            "last_communication": "2022-06-15 15:00:32"
+        },
+        "config": {
+            "scheduler": 16777215,
+            "timezone_offset": -180,
+            "precision_reduction": 0.2,
+            "measuring_interval": 5,
+            "logging_interval": 60,
+            "activity_mode": 0,
+            "fixed_transfer_interval": 0,
+            "x_min_transfer_interval": 0,
+            "rain_monitor": 0,
+            "water_level_monitor": 0
+        },
+        "position": {
+            "altitude": 17.93,
+            "geo": {
+                "coordinates": [
+                    -43.23280632055665,
+                    -22.979070328704484
+                ],
+                "type": "Point"
+            },
+            "timezoneCode": "America/Sao_Paulo"
+        },
+        "meta": null,
+        "metaUnits": "metric",
+        "networking": {
+            "type": "WIFI",
+            "ssid": "",
+            "meid": false,
+            "modem": {
+                "brand": "WIZnet",
+                "type": "GS1011",
+                "fwversion": "WizFi210__1.1.1.0(W)",
+                "mac_addr": "00:08:dc:1c:9d:2b"
+            }
+        },
+        "warnings": {
+            "sensors": [],
+            "sms_numbers": []
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0120C6A2",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "device_id": 8,
+            "device_name": "iMetos ECO D3",
+            "uid": "2466C2025D6E61F5",
+            "firmware": "01.533.20210512",
+            "hardware": "29-0356",
+            "programmed": "2021.04.07 10:53",
+            "apn_table": 3,
+            "description": "iMetosEco3, hw: 29-0356, fw: 01.533.20210512"
+        },
+        "dates": {
+            "min_date": "2021-04-12 07:01:14",
+            "max_date": "2023-08-03 14:01:23",
+            "created_at": "2021-04-07 12:36:13",
+            "last_communication": "2023-08-03 14:02:17"
+        },
+        "config": {
+            "scheduler": 16777215,
+            "timezone_offset": 120,
+            "precision_reduction": 0.2,
+            "measuring_interval": 5,
+            "logging_interval": 10,
+            "activity_mode": 0,
+            "fixed_transfer_interval": 0,
+            "x_min_transfer_interval": 0,
+            "rain_monitor": 0,
+            "water_level_monitor": 0,
+            "schedulerOld": "FFFFFF000000000000000000000000000000000000000000"
+        },
+        "position": {
+            "geo": {
+                "type": "Point",
+                "coordinates": [
+                    -5.41545,
+                    39.202844
+                ]
+            },
+            "altitude": 346.2,
+            "hdop": 2.2,
+            "measure_time": 0,
+            "timezoneCode": "Europe/Madrid"
+        },
+        "meta": {
+            "time": 1691067600,
+            "solarPanel": 10065,
+            "battery": 6747,
+            "soilTemp": 28.8,
+            "volumetricAverage": 16.79
+        },
+        "metaUnits": "metric",
+        "networking": {
+            "type": "LTE",
+            "mcc": "214",
+            "mnc": "01",
+            "mcc_sim": "295",
+            "mnc_sim": "05",
+            "country": "Liechtenstein",
+            "apn": "metos.at",
+            "usernme": "metos",
+            "password": "",
+            "simid": "89423053021012040564",
+            "rssi_pct": "0",
+            "imei": "355465073673424",
+            "modem": {
+                "brand": "Sierra Wireless",
+                "type": "HL7692",
+                "fwversion": "RHL769x.2.27.183100.201809071813.x7120m_3",
+                "sn": "VE029640600910"
+            },
+            "provider": "N/A",
+            "provider_sim": "N/A",
+            "username": "metos",
+            "roaming": true,
+            "meid": "355465073673424"
+        },
+        "warnings": {
+            "sensors": [],
+            "sms_numbers": []
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0120C6A3",
+            "custom": "Lim\u00e3o \u00c1rea 2"
+        },
+        "rights": "rw",
+        "info": {
+            "device_id": 7,
+            "device_name": "iMetos 3.3",
+            "uid": "248C7D075B32D51E",
+            "firmware": "08.533.20210512",
+            "hardware": "29-0334",
+            "programmed": "2022.01.20 13:41",
+            "apn_table": 0,
+            "description": "iMetos 3.3, hw: 29-0334, fw: 08.533.20210512"
+        },
+        "dates": {
+            "min_date": "2021-04-07 12:48:05",
+            "max_date": "2023-08-03 08:20:12",
+            "created_at": "2021-04-07 12:42:16",
+            "last_communication": "2023-08-03 08:20:47"
+        },
+        "config": {
+            "scheduler": 4481024,
+            "timezone_offset": -240,
+            "precision_reduction": 0.2,
+            "measuring_interval": 5,
+            "logging_interval": 10,
+            "activity_mode": 0,
+            "fixed_transfer_interval": 10,
+            "x_min_transfer_interval": 0,
+            "rain_monitor": 0,
+            "water_level_monitor": 0,
+            "schedulerOld": "006044000000000000000000000000000000000000000000",
+            "emergency_sms_number": "5521988141054"
+        },
+        "position": {
+            "altitude": 377.35,
+            "geo": {
+                "coordinates": [
+                    -54.18650951880797,
+                    -13.329954963067205
+                ],
+                "type": "Point"
+            },
+            "timezoneCode": "America/Cuiaba"
+        },
+        "meta": {
+            "time": 1691049600,
+            "solarPanel": 10017,
+            "battery": 6778
+        },
+        "metaUnits": "metric",
+        "networking": {
+            "type": "WIFI",
+            "ssid": "XR_PUC_BNDES",
+            "meid": false,
+            "modem": {
+                "brand": "WIZnet",
+                "type": "GS1011",
+                "fwversion": "WizFi210__1.1.1.0(W)",
+                "mac_addr": "00:08:dc:55:fd:76"
+            },
+            "rssi_pct": "54"
+        },
+        "warnings": {
+            "sensors": [],
+            "sms_numbers": []
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0120C6A4",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "device_id": 7,
+            "device_name": "iMetos 3.3",
+            "uid": "248C7D075B32D37A",
+            "firmware": "08.533.20210318",
+            "hardware": "29-0503",
+            "programmed": "",
+            "apn_table": 0,
+            "description": "iMetos 3.3, hw: 29-0503, fw: 08.533.20210318"
+        },
+        "dates": {
+            "min_date": "2021-04-19 05:37:51",
+            "max_date": "2021-10-14 09:10:11",
+            "created_at": "2021-04-07 12:47:09",
+            "last_communication": "2021-10-14 09:15:57"
+        },
+        "config": {
+            "scheduler": 114688,
+            "timezone_offset": -180,
+            "precision_reduction": 0.2,
+            "measuring_interval": 5,
+            "logging_interval": 10,
+            "activity_mode": 0,
+            "fixed_transfer_interval": 15,
+            "x_min_transfer_interval": 0,
+            "rain_monitor": 0,
+            "water_level_monitor": 0,
+            "schedulerOld": "00C001000000000000000000000000000000000000000000"
+        },
+        "position": {
+            "altitude": 0,
+            "geo": {
+                "coordinates": [
+                    -43.1728965,
+                    -22.9068467
+                ],
+                "type": "Point"
+            },
+            "timezoneCode": "America/Sao_Paulo"
+        },
+        "meta": null,
+        "metaUnits": "metric",
+        "networking": {
+            "type": "WIFI",
+            "ssid": "",
+            "meid": false,
+            "modem": {
+                "brand": "WIZnet",
+                "type": "GS1011",
+                "fwversion": "WizFi210__1.1.1.0(W)",
+                "mac_addr": "00:08:dc:55:fd:ec"
+            }
+        },
+        "warnings": {
+            "sensors": [],
+            "sms_numbers": []
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "03100140",
+            "custom": "uMETOS"
+        },
+        "rights": "rw",
+        "info": {
+            "device_id": 51,
+            "device_name": "NB-IoT",
+            "hardware": 2,
+            "firmware": 1.62
+        },
+        "dates": {
+            "min_date": "2019-02-06 20:46:23",
+            "max_date": "2021-10-05 12:42:17",
+            "created_at": "2019-02-06 19:46:23",
+            "last_communication": "2021-10-05 12:42:17"
+        },
+        "config": {
+            "timezone_offset": -180,
+            "measuring_interval": 5,
+            "transfer_interval": 30,
+            "logging_interval": 10,
+            "network_registration_timeout": 240,
+            "device_reset": false,
+            "sensor_set_reset": false,
+            "delete_data": false
+        },
+        "position": {
+            "altitude": 573.01,
+            "geo": {
+                "coordinates": [
+                    -44.63573080000003,
+                    -13.3425639
+                ],
+                "type": "Point"
+            },
+            "timezoneCode": "America/Sao_Paulo"
+        },
+        "meta": null,
+        "metaUnits": "metric",
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "034004AC",
+            "custom": "Hispamar"
+        },
+        "rights": "rw",
+        "info": {
+            "device_id": 52,
+            "device_name": "LoRAIN",
+            "hardware": 1.2,
+            "firmware": 1.19
+        },
+        "dates": {
+            "min_date": "2020-01-29 07:22:17",
+            "max_date": "2023-02-10 20:58:03",
+            "created_at": "2020-01-29 07:22:17",
+            "last_communication": "2023-02-10 20:58:03"
+        },
+        "config": {
+            "timezone_offset": -180
+        },
+        "position": {
+            "altitude": 15.03,
+            "geo": {
+                "coordinates": [
+                    -43.65141068269501,
+                    -22.956297312171056
+                ],
+                "type": "Point"
+            },
+            "timezoneCode": "America/Sao_Paulo"
+        },
+        "meta": null,
+        "metaUnits": "metric",
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0390C37C",
+            "custom": "Campo Experimental - Irriga\u00e7\u00e3o. "
+        },
+        "rights": "rw",
+        "info": {
+            "hardware": "4.00",
+            "firmware": "3.13",
+            "programmed": "22-06-15 09:25:00",
+            "device_id": 49,
+            "device_name": "uMETOS CLIMA",
+            "msg_num": 65,
+            "msg_payload_version": 1,
+            "bootloader_version": 103,
+            "hardware_pcb": "29-0409",
+            "fw_release_type": "production"
+        },
+        "dates": {
+            "min_date": "2000-01-01 00:00:00",
+            "max_date": "2023-07-30 00:30:00",
+            "created_at": "2021-04-08 07:16:33",
+            "last_communication": "2023-07-30 00:33:26"
+        },
+        "config": {
+            "measuring_interval": 5,
+            "logging_interval": 0,
+            "transfer_interval": 30,
+            "network_registration_timeout": 240,
+            "device_reset": false,
+            "delete_data": false,
+            "sensor_set_reset": false,
+            "timezone_offset": -240,
+            "frost_monitoring": {
+                "enabled": false
+            },
+            "water_level_elevation": 0
+        },
+        "position": {
+            "geo": {
+                "type": "Point",
+                "coordinates": [
+                    -54.238221,
+                    -13.315076
+                ]
+            },
+            "altitude": 411.4,
+            "timezoneCode": "America/Cuiaba"
+        },
+        "meta": {
+            "time": 1690675200,
+            "battery": 6519,
+            "solarPanel": 0,
+            "soilTemp": 21.2143,
+            "volumetricAverage": 21.7,
+            "tensiometricAverage": 42
+        },
+        "metaUnits": "metric",
+        "networking": {
+            "rssi_pct": 65,
+            "type": "NB-IoT",
+            "simid": "89551805400567182089",
+            "imei": "354616091175948",
+            "imsi": "724180056718208",
+            "apn": "internet",
+            "username": "None",
+            "password": "None",
+            "modem": {
+                "type": "HL7800",
+                "sn": "5N044372281310",
+                "fwrevision": "HL7800.4.6.8.0",
+                "fwversion": "HL7800.4.6.8"
+            },
+            "network_name": "",
+            "network_type": "Home",
+            "default_radio_technology": "NB-IoT",
+            "registration_time": 97,
+            "current_radio_technology": "NB-IoT",
+            "operator_selection": 0,
+            "roaming": false
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0390C37D",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "hardware": "4.00",
+            "firmware": "3.00",
+            "programmed": "2021-05-25 09:35:00",
+            "device_id": 49,
+            "device_name": "uMETOS CLIMA"
+        },
+        "dates": {
+            "min_date": "2000-01-01 00:00:00",
+            "max_date": "2021-11-05 13:00:00",
+            "created_at": "2021-04-08 07:04:13",
+            "last_communication": "2021-11-05 13:00:30"
+        },
+        "config": {
+            "measuring_interval": 15,
+            "logging_interval": 15,
+            "transfer_interval": 60,
+            "network_registration_timeout": 240,
+            "device_reset": false,
+            "delete_data": false,
+            "sensor_set_reset": false,
+            "timezone_offset": 0
+        },
+        "position": null,
+        "meta": null,
+        "metaUnits": "metric",
+        "networking": {
+            "rssi_pct": 75,
+            "type": "NB-IoT",
+            "simid": "89555480000003543028",
+            "imei": "354616091176227",
+            "imsi": "724548000350802",
+            "apn": "virtueyes.com.br",
+            "username": "None",
+            "password": "None",
+            "modem": {
+                "type": "HL7800",
+                "sn": "5N044370211110",
+                "fwversion": "HL7800.4.6.8.0"
+            }
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0390C386",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "hardware": "4.00",
+            "firmware": "3.00",
+            "programmed": "2021-05-25 09:35:00",
+            "device_id": 49,
+            "device_name": "uMETOS CLIMA"
+        },
+        "dates": {
+            "min_date": "2000-01-01 00:00:00",
+            "max_date": "2021-11-05 11:00:00",
+            "created_at": "2021-04-08 06:53:38",
+            "last_communication": "2021-11-05 11:00:29"
+        },
+        "config": {
+            "measuring_interval": 15,
+            "logging_interval": 15,
+            "transfer_interval": 60,
+            "network_registration_timeout": 240,
+            "device_reset": false,
+            "delete_data": false,
+            "sensor_set_reset": false,
+            "timezone_offset": -180
+        },
+        "position": null,
+        "meta": null,
+        "metaUnits": "metric",
+        "networking": {
+            "rssi_pct": 37,
+            "type": "NB-IoT",
+            "simid": "89555480000003543002",
+            "imei": "354616091176193",
+            "imsi": "724548000350800",
+            "apn": "virtueyes.com.br",
+            "username": "None",
+            "password": "None",
+            "modem": {
+                "type": "HL7800",
+                "sn": "5N044370211410",
+                "fwversion": "HL7800.4.6.8.0"
+            }
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0390C388",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "hardware": "4.00",
+            "firmware": "3.00",
+            "programmed": "2021-05-25 09:35:00",
+            "device_id": 49,
+            "device_name": "uMETOS CLIMA"
+        },
+        "dates": {
+            "min_date": "2000-01-01 00:00:00",
+            "max_date": "2021-11-05 13:00:00",
+            "created_at": "2021-04-08 07:26:57",
+            "last_communication": "2021-11-05 13:00:30"
+        },
+        "config": {
+            "measuring_interval": 15,
+            "logging_interval": 15,
+            "transfer_interval": 60,
+            "network_registration_timeout": 240,
+            "device_reset": false,
+            "delete_data": false,
+            "sensor_set_reset": false,
+            "timezone_offset": 0
+        },
+        "position": null,
+        "meta": null,
+        "metaUnits": "metric",
+        "networking": {
+            "rssi_pct": 81,
+            "type": "NB-IoT",
+            "simid": "89555480000003543119",
+            "imei": "354616091164173",
+            "imsi": "724548000350811",
+            "apn": "virtueyes.com.br",
+            "username": "None",
+            "password": "None",
+            "modem": {
+                "type": "HL7800",
+                "sn": "5N045585891110",
+                "fwversion": "HL7800.4.6.8.0"
+            }
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0390C38B",
+            "custom": "TIM Lab26A "
+        },
+        "rights": "rw",
+        "info": {
+            "hardware": "4.00",
+            "firmware": "3.00",
+            "programmed": "2021-05-25 09:35:00",
+            "device_id": 49,
+            "device_name": "uMETOS CLIMA"
+        },
+        "dates": {
+            "min_date": "2000-01-01 00:00:00",
+            "max_date": "2022-03-09 14:00:00",
+            "created_at": "2021-04-08 07:42:08",
+            "last_communication": "2022-03-09 14:00:18"
+        },
+        "config": {
+            "measuring_interval": 15,
+            "logging_interval": 5,
+            "transfer_interval": 10,
+            "network_registration_timeout": 240,
+            "device_reset": false,
+            "delete_data": false,
+            "sensor_set_reset": false,
+            "timezone_offset": -180,
+            "scheduler": false,
+            "schedulerOld": "000000000000000000000000000000000000000000000000"
+        },
+        "position": {
+            "altitude": 7.59,
+            "geo": {
+                "coordinates": [
+                    -43.2285147,
+                    -22.9760044
+                ],
+                "type": "Point"
+            },
+            "timezoneCode": "America/Sao_Paulo"
+        },
+        "meta": null,
+        "metaUnits": "metric",
+        "networking": {
+            "rssi_pct": 40,
+            "type": "NB-IoT",
+            "simid": "89550222000044663714",
+            "imei": "354616091175666",
+            "imsi": "724022204478871",
+            "apn": "nbiot",
+            "username": "None",
+            "password": "None",
+            "modem": {
+                "type": "HL7800",
+                "sn": "5N044372770410",
+                "fwversion": "HL7800.4.6.8.0"
+            }
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0710BED9",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "uid": "004C00323038510B39313834",
+            "firmware": "02.021.20210827",
+            "hardware": "29-0357",
+            "device_id": 71,
+            "device_name": "CropView Zoom",
+            "programmed": "2021.08.24 21:11",
+            "apn_table": 3,
+            "description": "CropVIEW Z, hw: 29-0357, fw: 02.021.20210827"
+        },
+        "dates": {
+            "min_date": "0001-01-01 00:00:00",
+            "max_date": "2023-07-29 19:26:15",
+            "created_at": "2023-03-14 08:09:10",
+            "last_communication": "2023-07-29 19:07:46"
+        },
+        "config": {
+            "scheduler_cv": "000108",
+            "scheduler": 524544,
+            "timezone_offset_cv": "-03:00",
+            "timezone_offset": 0,
+            "server_port": "",
+            "server_domain": "",
+            "logging_interval": 60,
+            "flash": 0,
+            "cam1": {
+                "active": true,
+                "square_spots": 255,
+                "auto_exposure": 1,
+                "integration_time": 1000,
+                "global_gain": 4160,
+                "max_integration_time": 2300,
+                "brightness_ref": 750,
+                "resolution": "quarter"
+            }
+        },
+        "position": {
+            "geo": {
+                "type": "Point",
+                "coordinates": [
+                    -54.228727,
+                    -13.311376
+                ]
+            },
+            "timezoneCode": "UTC",
+            "altitude": 387.9,
+            "hdop": 1.1,
+            "measure_time": 0
+        },
+        "topology": {
+            "ccu": "07D0C1D4",
+            "cam2": "0720BEDA"
+        },
+        "meta": {
+            "time": 1690632000,
+            "battery": 6800,
+            "solarPanel": 7185
+        },
+        "metaUnits": "metric",
+        "networking": {
+            "type": "LTE",
+            "mcc": "724",
+            "mnc": "18",
+            "mcc_sim": "724",
+            "mnc_sim": "18",
+            "simid": "89551805400567182105",
+            "apn": "internet",
+            "country": "Brazil",
+            "username": "",
+            "password": "",
+            "roaming": 0,
+            "rssi": 51,
+            "usernme": "",
+            "rssi_pct": "51",
+            "modem": {
+                "brand": "Sierra Wireless",
+                "type": "HL7650",
+                "fwversion": "SWIMCB71XX-TIM3.26.00.173700.201709210015.01",
+                "sn": "TD948101160910"
+            },
+            "imei": "354940081005273",
+            "provider": "N/A",
+            "provider_sim": "N/A"
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0720BEDA",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "uid": "004100223038510639313834",
+            "firmware": "02.021.20210827",
+            "hardware": "29-0357",
+            "device_id": 72,
+            "device_name": "iScout",
+            "programmed": "2022.03.21 15:17",
+            "apn_table": 3,
+            "description": "iScout, hw: 29-0357, fw: 02.021.20210827"
+        },
+        "dates": {
+            "min_date": "0001-01-01 00:00:00",
+            "max_date": "2023-07-30 00:42:21",
+            "created_at": "2023-03-15 02:01:49",
+            "last_communication": "2023-07-29 23:07:51"
+        },
+        "config": {
+            "scheduler_cv": "000000",
+            "scheduler": 0,
+            "timezone_offset_cv": "+00:00",
+            "timezone_offset": 0,
+            "server_port": "",
+            "server_domain": "",
+            "logging_interval": 30,
+            "measuring_interval": 5,
+            "flash": 1,
+            "cam1": {
+                "active": true,
+                "square_spots": 255,
+                "auto_exposure": 1,
+                "integration_time": 1000,
+                "global_gain": 6208,
+                "max_integration_time": 2300,
+                "brightness_ref": 750,
+                "resolution": "full"
+            }
+        },
+        "position": {
+            "geo": {
+                "type": "Point",
+                "coordinates": [
+                    -54.228715,
+                    -13.311025
+                ]
+            },
+            "timezoneCode": "UTC",
+            "altitude": 373.2,
+            "hdop": 7,
+            "measure_time": 0
+        },
+        "topology": {
+            "ccu": "07D0C1D4",
+            "cam1": "0710BED9"
+        },
+        "meta": {
+            "time": 1690632000,
+            "battery": 6800,
+            "solarPanel": 7185
+        },
+        "metaUnits": "metric",
+        "networking": {
+            "type": "LTE",
+            "mcc": "724",
+            "mnc": "18",
+            "mcc_sim": "724",
+            "mnc_sim": "18",
+            "simid": "89551805400567182014",
+            "apn": "internet",
+            "country": "Brazil",
+            "username": "",
+            "password": "",
+            "roaming": 0,
+            "rssi": 58,
+            "usernme": "",
+            "rssi_pct": "58",
+            "modem": {
+                "brand": "Sierra Wireless",
+                "type": "HL7650",
+                "fwversion": "SWIMCB71XX-TIM3.26.00.173700.201709210015.01",
+                "sn": "TD948100241210"
+            },
+            "imei": "354940081005166",
+            "provider": "N/A",
+            "provider_sim": "N/A"
+        },
+        "licenses": false
+    },
+    {
+        "name": {
+            "original": "0730BED8",
+            "custom": ""
+        },
+        "rights": "rw",
+        "info": {
+            "uid": "003200323238510436313732",
+            "firmware": "02.022.20210909",
+            "hardware": "29-0346",
+            "device_id": 73,
+            "device_name": "CropView Panorama",
+            "programmed": "2022.10.13 20:14",
+            "apn_table": 3,
+            "description": "0000000000, hw: 29-0346, fw: 02.022.20210909"
+        },
+        "dates": {
+            "min_date": "0001-01-01 00:00:00",
+            "max_date": "2023-07-29 19:26:34",
+            "created_at": "2023-03-14 11:02:13",
+            "last_communication": "2023-07-29 19:08:03"
+        },
+        "config": {
+            "scheduler_cv": "000108",
+            "scheduler": 524544,
+            "timezone_offset_cv": "-04:00",
+            "timezone_offset": 0,
+            "server_port": "",
+            "server_domain": "",
+            "logging_interval": 60,
+            "flash": 0,
+            "cam1": {
+                "active": true,
+                "square_spots": 255,
+                "auto_exposure": 1,
+                "integration_time": 1000,
+                "global_gain": 4160,
+                "max_integration_time": 2300,
+                "brightness_ref": 750,
+                "resolution": "quarter"
+            }
+        },
+        "position": {
+            "geo": {
+                "type": "Point",
+                "coordinates": [
+                    -54.237895,
+                    -13.315725
+                ]
+            },
+            "timezoneCode": "UTC",
+            "altitude": 325.7,
+            "hdop": 17,
+            "measure_time": 0
+        },
+        "topology": {
+            "ccu": "07D0BFD4",
+            "cam2": ""
+        },
+        "meta": {
+            "time": 1690614000,
+            "battery": 6479,
+            "solarPanel": 0
+        },
+        "metaUnits": "metric",
+        "networking": {
+            "type": "LTE",
+            "mcc": "724",
+            "mnc": "18",
+            "mcc_sim": "724",
+            "mnc_sim": "18",
+            "simid": "89551805400567182097",
+            "apn": "internet",
+            "country": "Brazil",
+            "username": "",
+            "password": "",
+            "roaming": 0,
+            "rssi": 67,
+            "usernme": "",
+            "rssi_pct": "67",
+            "modem": {
+                "brand": "Sierra Wireless",
+                "type": "HL7650",
+                "fwversion": "SWIMCB71XX-TIM3.26.00.173700.201709210015.01",
+                "sn": "TD948100840610"
+            },
+            "imei": "354940081005612",
+            "provider": "N/A",
+            "provider_sim": "N/A"
+        },
+        "licenses": false
+    }
+]
