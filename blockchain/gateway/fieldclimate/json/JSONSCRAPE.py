@@ -5,47 +5,26 @@ import json
 from datetime import datetime
 import time
 
-with open('blockchain/gateway/fieldclimate/json/general_output.json', 'r') as file:
+stationID = '0120C6A2'
+
+# leitura do arquivo
+with open(f'blockchain/gateway/fieldclimate/json/{stationID}_output.json', 'r') as file:
     jsonFile = json.load(file)    
 
-# Navegando pelo JSON. Dados do do HC Air Temperature (Temperatura do Ar)
-lastUpdate = jsonFile['dates'][6]
-hc = jsonFile['data'][6] #Ano - Mês - Dia
-hcName = hc['name']
-hcUnit = hc['unit']
-hcCode = hc['code']
-lastDayAvg = hc['values']['avg'][6]
-lastDayMax = hc['values']['max'][6]
-lastDayMin = hc['values']['min'][6]
+# pegando o horário mais atual
+lastUpdated = jsonFile['dates'][6]
+print(lastUpdated)
 
-# Convertendo data para unix timestamp
-lastUpdate = lastUpdate.replace('-', '/')
-formato = "%Y/%m/%d %H:%M:%S"
-aux = datetime.strptime(lastUpdate, formato)
-lastUpdateUnix = aux.timestamp()
-
-# Prints
-print('Dispositivo de leitura de temperatura do ar')
-print(f'Nome do dispositivo: {hcName}')
-print(f'Código do dispositivo: {hcCode}') #Chave primária
-print(f'Unidade: {hcUnit}')
-print(f'Temperatura média do dia anterior: {lastDayAvg}')
-print(f'Temperatura máxima do dia anterior: {lastDayMax}')
-print(f'Temperatura mínima do dia anterior: {lastDayMin}')
-print(f'Horário de última atualização: {lastUpdate}')
-print(f'Em Unix: {lastUpdateUnix}')
-
-print('')
-print("TESTE")
-print('')
-
+# navegando para a área de dados (data)
 data = jsonFile['data']
 
+# função de escanear dados específicos
 def jsonScan(json_object, name):
-        print([obj for obj in json_object if obj['name']==name][0]['type'])
-        print([obj for obj in json_object if obj['name']==name][0]['unit'])
-        print([obj for obj in json_object if obj['name']==name][0]['values']['avg'])
-        print([obj for obj in json_object if obj['name']==name][0]['values']['max'])
-        print([obj for obj in json_object if obj['name']==name][0]['values']['min'])
+    objName = name
+    objType = [obj for obj in json_object if obj['name']==name][0]['type']
+    objUnit = [obj for obj in json_object if obj['name']==name][0]['unit']
+    objValues = [obj for obj in json_object if obj['name']==name][0]['values']
 
-print(jsonScan(data, "HC Air temperature"))
+    return objName, objType, objUnit, objValues
+
+print(jsonScan(data, "Solar Panel"))

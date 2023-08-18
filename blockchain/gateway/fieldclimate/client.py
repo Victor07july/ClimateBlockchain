@@ -14,36 +14,35 @@ channel_name = "mychannel"
 cc_name = "fieldclimate"
 cc_version = "1.0"
 
-with open('json/general_output.json', 'r') as file:
-    data = json.load(file)    
+# leitura do arquivo
+stationID = '0120C6A2'
+with open(f'blockchain/gateway/fieldclimate/json/{stationID}_output.json', 'r') as file:
+    jsonFile = json.load(file)    
 
-# Navegando pelo JSON. Dados do do HC Air Temperature (Temperatura do Ar)
-hc = data['data'][6] #Ano - Mês - Dia
-hcCode = hc['code'] # Chave primária
-hcName = hc['name']
-hcUnit = hc['unit']
-lastDayAvg = hc['values']['avg'][6]
-lastDayMax = hc['values']['max'][6]
-lastDayMin = hc['values']['min'][6]
-lastUpdate = data['dates'][6]
+# pegando o horário mais atual
+lastUpdated = jsonFile['dates'][6]
+
+# navegando para a área de dados (data)
+data = jsonFile['data']
+
+# função de escanear dados específicos
+def jsonScan(json_object, name):
+    deviceName = name
+    deviceType = [obj for obj in json_object if obj['name']==name][0]['type']
+    unit = [obj for obj in json_object if obj['name']==name][0]['unit']
+    values = [obj for obj in json_object if obj['name']==name][0]['values']
+
+    return deviceName, deviceType, unit, values
+
+deviceName, deviceType, unit, values = jsonScan(data, 'Solar Panel')
 
 # Convertendo data para unix timestamp
-lastUpdate = lastUpdate.replace('-', '/')
+lastUpdate = lastUpdated.replace('-', '/')
 formato = "%Y/%m/%d %H:%M:%S"
 aux = datetime.strptime(lastUpdate, formato)
 lastUpdateUnix = aux.timestamp()
-
-'''
-print('Dispositivo de leitura de temperatura do ar')
-print(f'Nome do dispositivo: {hcName}')
-print(f'Código do dispositivo: {hcCode}') #Chave primária
-print(f'Unidade: {hcUnit}')
-print(f'Temperatura média do dia anterior: {lastDayAvg}')
-print(f'Temperatura máxima do dia anterior: {lastDayMax}')
-print(f'Temperatura mínima do dia anterior: {lastDayMin}')
-print(f'Horário de última atualização: {lastUpdate}')
-print(f'Em Unix: {lastUpdateUnix}')
-'''
+print(f'Horário de inserção dos dados: {lastUpdate}')
+print(f'Horário de inserção dos dados em Unix: {lastUpdateUnix}')
 
 if __name__ == "__main__":
 
@@ -54,8 +53,8 @@ if __name__ == "__main__":
 
     # ------ PEGANDO O HORÁRIO DE EXECUÇÃO DO CLIENTE --------
     # Horário de execução do cliente em unix
-    timestampCliente = time.time()
-    print(f'Horário de execução do cliente em UNIX: {timestampCliente}')
+    clientExecutionUnix = time.time()
+    print(f'Horário de execução do cliente em UNIX: {clientExecutionUnix}')
 
     print("Iniciando o chaincode...")
     loop = asyncio.get_event_loop()
@@ -78,8 +77,8 @@ if __name__ == "__main__":
             requestor=admin,
             channel_name=channel_name,
             peers=['peer0.org1.example.com', 'peer0.org2.example.com'],
-            args=[str(hcCode), hcName, str(hcUnit), str(lastDayAvg), str(lastDayMax), str(lastDayMin), str(lastUpdateUnix)],
-            fcn= 'InsertHCData',
+            args=[stationID, deviceName, deviceType, unit, values, lastUpdateUnix, clientExecutionUnix],
+            fcn= 'InsertStationData',
             cc_name=cc_name,
             wait_for_event=True,  # optional, for private data
             # for being sure chaincode invocation has been commited in the ledger, default is on tx event
@@ -93,8 +92,8 @@ if __name__ == "__main__":
         requestor=admin,
         channel_name=channel_name,
         peers=['peer0.org1.example.com', 'peer0.org2.example.com'],
-        args=[str(hcCode), str(lastUpdateUnix)],
-        fcn= 'ReadHCData',
+        args=[stationID, deviceName],
+        fcn= 'ReadStationData',
         cc_name=cc_name,
         wait_for_event=True,  # optional, for private data
         # for being sure chaincode invocation has been commited in the ledger, default is on tx event
