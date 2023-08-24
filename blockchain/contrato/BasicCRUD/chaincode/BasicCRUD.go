@@ -199,7 +199,15 @@ func (s *SmartContract) GetAllAssets(ctx contractapi.TransactionContextInterface
 const compositeKey = ""
 
 // chave composta id e timestamp unix
-func (s *SmartContract) InsertStationData(ctx contractapi.TransactionContextInterface, stationid string, devicename string, devicetype string, unit string, values, lastupdateunix string, clientexecutionunix string) error {
+func (s *SmartContract) InsertStationData(ctx contractapi.TransactionContextInterface,
+	stationid string,
+	devicename string,
+	devicetype string,
+	unit string,
+	values string,
+	lastupdateunix string,
+	clientexecutionunix string,
+) error {
 
 	stationdata := StationData{
 		DeviceName:          devicename,
@@ -245,13 +253,15 @@ func (s *SmartContract) ReadStationData(ctx contractapi.TransactionContextInterf
 		return nil, err
 	}
 
+	// verifique se o valor retornado é nulo
 	if value == nil {
 		return nil, fmt.Errorf("Nenhum valor encontrado para a chave %s", key)
 	}
 
+	// cria estrutura para receber manipular os dados recebidos
 	var stationdata StationData
 
-	// realiza o unmarshal
+	// realiza o unmarshal dos dados recebidos na estrutura
 	err = json.Unmarshal(value, &stationdata)
 	if err != nil {
 		return nil, err

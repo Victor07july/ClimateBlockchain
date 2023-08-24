@@ -8,7 +8,7 @@ from datetime import datetime
 from dateutil.tz import tzlocal
 import json
 
-def APIConnect():
+def APIConnect(stationID='00206C61'):
 
     # Class to perform HMAC encoding
     class AuthHmacMetosGet(AuthBase):
@@ -36,25 +36,32 @@ def APIConnect():
     # HMAC Authentication credentials
     publicKey = '0b0989163ed6b703cd13904039b4731bea2788e76f51e20f'
     privateKey = 'ec07663127f0f862d2fd91d32251b3667fde7c479cf3fd00'
-    stationID = '0120C6A2'
 
     # Service/Route that you wish to call
-    # apiRoute = '/chart/image/0120C6A2' # rota desejada, como user, station id, etc. Dependendo da chamada, vc precisa mudar o método (GET, POST, etc)
-    #apiRoute = '/data/0120C6A2/hourly/from/1595374267/to/1689982267'
-    apiRoute = f'/data/{stationID}/raw/last/7' #Dados da estação dos últimos 7 dias
+    # Dependendo da chamada, vc precisa mudar o método (GET, POST, etc)
+    apiRoute = f'/data/{stationID}/raw/last/1' #Ultimo dado enviado pela estação / dispositivo
 
     auth = AuthHmacMetosGet(apiRoute, publicKey, privateKey)
     response = requests.get(apiURI+apiRoute, headers={'Accept': 'application/json'}, auth=auth)
 
+    if response.status_code == 200:
+        print("Conexão com a API FieldClimate realizada com sucesso!")
+        print(f"Código: {response.status_code}")
+    elif response.status_code != 200:
+        print(f"Um erro ocorreu ao buscar a estação. O ID inserido ({stationID}) está correto?")
+        print(response.status_code)
+        exit()
+
+
     # salvar resposta da rota em um arquivo
     json_object = json.dumps(response.json(), indent=4)
 
-    with open(f"blockchain/gateway/fieldclimate/json/{stationID}_output.json", "w") as outfile:
+    with open(f"json/{stationID}_output.json", "w") as outfile:
         outfile.write(json_object)
 
-    print(response.json())
+    print(f"Os dados da estação foram gravados no arquivo {stationID}_output.json")
+
+    #print(response.json())
     #print(json_object)
 
     #print(json.dumps(response.json(), indent=2))
-
-APIConnect()

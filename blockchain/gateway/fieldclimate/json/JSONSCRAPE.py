@@ -5,14 +5,14 @@ import json
 from datetime import datetime
 import time
 
-stationID = '0120C6A2'
+stationID = '00206C61'
 
 # leitura do arquivo
 with open(f'blockchain/gateway/fieldclimate/json/{stationID}_output.json', 'r') as file:
     jsonFile = json.load(file)    
 
 # pegando o horário mais atual
-lastUpdated = jsonFile['dates'][6]
+lastUpdated = jsonFile['dates'][0]
 print(lastUpdated)
 
 # navegando para a área de dados (data)
@@ -27,4 +27,4 @@ def jsonScan(json_object, name):
 
     return objName, objType, objUnit, objValues
 
-print(jsonScan(data, "Solar Panel"))
+print(jsonScan(data, "HC Air Temperature"))

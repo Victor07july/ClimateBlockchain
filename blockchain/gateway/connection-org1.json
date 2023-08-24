@@ -24,7 +24,7 @@
       "users": {
         "Admin": {
           "cert": "../../organizations/ordererOrganizations/example.com/users/Admin@example.com/msp/signcerts/cert.pem",
-          "private_key": "../../organizations/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/6563c2ea97289b1b81efb3c6b004c04c0031461e564b695ee600e4d63a0372e2_sk"
+          "private_key": "../../organizations/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore/80ab27acf78f126f6073eb6740f2610ad8f859257cb0dea255d422e179e58b92_sk"
         }
       }
     },
@@ -39,11 +39,11 @@
       "users": {
         "Admin": {
           "cert": "../../organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/cert.pem",
-          "private_key": "../../organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/f831705e8f838220f84bb30b3ca06f6d015c8f01e5728dc9ab4165857ca4d391_sk"
+          "private_key": "../../organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/8f723162f25e18583034ac9fc0bcb1371f6eab550985d6ccb26b923f64e19a54_sk"
         },
         "User1": {
           "cert": "../../organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/signcerts/cert.pem",
-          "private_key": "../../organizations//peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/44b570f48df68d7bf4e11df8171aec57766170a84164efc2c32db48b4374e41e_sk"
+          "private_key": "../../organizations//peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/61a6d01cbb0ff8852d518e9530434b66dea5856228e09c3055f2103747d3b71f_sk"
         }
       }
     },
@@ -58,11 +58,11 @@
       "users": {
         "Admin": {
           "cert": "../../organizations/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/cert.pem",
-          "private_key": "../../organizations//peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/44b570f48df68d7bf4e11df8171aec57766170a84164efc2c32db48b4374e41e_sk"
+          "private_key": "../../organizations//peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/61a6d01cbb0ff8852d518e9530434b66dea5856228e09c3055f2103747d3b71f_sk"
         },
         "User1": {
           "cert": "../../organizations/peerOrganizations/org2.example.com/users/User1@org2.example.com/msp/signcerts/cert.pem",
-          "private_key": "../../organizations//peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/44b570f48df68d7bf4e11df8171aec57766170a84164efc2c32db48b4374e41e_sk"
+          "private_key": "../../organizations//peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/61a6d01cbb0ff8852d518e9530434b66dea5856228e09c3055f2103747d3b71f_sk"
         }
       }
     }
