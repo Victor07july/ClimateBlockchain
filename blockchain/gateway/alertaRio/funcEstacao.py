@@ -10,7 +10,7 @@ def getEstacao(URL, idEstacao):
     # faz o request da url
     response = requests.get(URL)
     print(response.status_code)
-
+    
     # pega o conteúdo e faz o parse
     soup = BeautifulSoup(response.content, 'lxml')
 

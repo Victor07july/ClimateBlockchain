@@ -1,4 +1,3 @@
-import requests
 import sys
 from hfc.fabric import Client as client_fabric
 from hfc.fabric_network.gateway import Gateway
