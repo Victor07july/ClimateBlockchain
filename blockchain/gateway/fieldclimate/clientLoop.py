@@ -18,6 +18,7 @@ cc_version = "1.0"
 #stationID = input('Insira o ID da estação desejada: ')
 stationID = '00206C61'
 
+# repetição do código a cada 5 minutos
 try:
     while True:
         # leitura do arquivo json antes de atualizar o arquivo
@@ -38,16 +39,16 @@ try:
             jsonFile = json.load(file)    
 
         # pegando o novo horario de atualizacao
-        print("Verificando novo último horário de atualização")
+        print("Verificando horário de atualização após a chamada")
         newLastUpdated = jsonFile['dates'][0]
 
-        # checando se o horário é o mesmo
+        # checando se o horário é o mesmo. caso seja, os dados estão repetidos e não serão inseridos no blockchain
         print("Verificando se os dados foram atualizados")
         while True:
             if oldLastUpdated == newLastUpdated:
                 print('Os dados ainda não foram atualizados. Aguarde 5 minutos')
-                print(oldLastUpdated)
-                print(newLastUpdated)
+                print(f'Data antes da chamada da API: {oldLastUpdated}')
+                print(f'Data após a chamada da API: {newLastUpdated}')
                 time.sleep(300)
             else:
                 print("Os dados da estação foram atualizados! Prosseguindo com a execução")
@@ -60,6 +61,7 @@ try:
         lastUpdatedUnix = aux.timestamp()
         print(f'A ultima atualização na estação {stationID} foi em: {newLastUpdated}')
         print(f'Horário em Unix: {lastUpdatedUnix}')
+
 
         # navegando para a área de dados (data)
         data = jsonFile['data']
@@ -120,7 +122,13 @@ try:
                 # for being sure chaincode invocation has been commited in the ledger, default is on tx event
                 #cc_pattern="^invoked*"  # if you want to wait for chaincode event and you have a `stub.SetEvent("invoked", value)` in your chaincode
                 ))
-            print(response)
+
+            # caso a função seja invocada com sucesso, response será uma string vazia
+            if response != '':
+                print('\n')
+                print("Um erro ocorreu durante a inserção!")
+                print(response)
+                sys.exit(0)
             
             response = loop.run_until_complete(c_hlf.chaincode_invoke(
                 requestor=admin,
@@ -134,6 +142,10 @@ try:
                 #cc_pattern="^invoked*"  # if you want to wait for chaincode event and you have a `stub.SetEvent("invoked", value)` in your chaincode
                 ))
             print(response)
+            print('Execução finalizada com sucesso!')
+            
+            print('\n')
+            print("Reiniciando código!")
 
 except KeyboardInterrupt:
     print("\nProcesso encerrado pelo usuário")
