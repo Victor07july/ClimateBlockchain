@@ -1,0 +1,505 @@
+{
+    "dates": [
+        "2023-08-22 15:01:00"
+    ],
+    "data": [
+        {
+            "name": "Solar Panel",
+            "name_original": "Solar Panel",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "mV",
+            "ch": 4,
+            "code": 30,
+            "group": 7,
+            "serial": "x",
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    9495
+                ]
+            }
+        },
+        {
+            "name": "Battery",
+            "name_original": "Battery",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "mV",
+            "ch": 7,
+            "code": 7,
+            "group": 7,
+            "serial": "x",
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    6736
+                ]
+            }
+        },
+        {
+            "name": "EAG Soil moisture 1",
+            "name_original": "EAG Soil moisture",
+            "type": "Sensor",
+            "decimals": 2,
+            "unit": "%",
+            "ch": 4001,
+            "code": 19969,
+            "group": 25,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    5.61
+                ]
+            }
+        },
+        {
+            "name": "EAG Soil moisture 2",
+            "name_original": "EAG Soil moisture",
+            "type": "Sensor",
+            "decimals": 2,
+            "unit": "%",
+            "ch": 4002,
+            "code": 19969,
+            "group": 25,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    13.83
+                ]
+            }
+        },
+        {
+            "name": "EAG Soil moisture 3",
+            "name_original": "EAG Soil moisture",
+            "type": "Sensor",
+            "decimals": 2,
+            "unit": "%",
+            "ch": 4003,
+            "code": 19969,
+            "group": 25,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    11.05
+                ]
+            }
+        },
+        {
+            "name": "EAG Soil moisture 4",
+            "name_original": "EAG Soil moisture",
+            "type": "Sensor",
+            "decimals": 2,
+            "unit": "%",
+            "ch": 4004,
+            "code": 19969,
+            "group": 25,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    18.92
+                ]
+            }
+        },
+        {
+            "name": "EAG Soil moisture 5",
+            "name_original": "EAG Soil moisture",
+            "type": "Sensor",
+            "decimals": 2,
+            "unit": "%",
+            "ch": 4005,
+            "code": 19969,
+            "group": 25,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    20.69
+                ]
+            }
+        },
+        {
+            "name": "EAG Soil moisture 6",
+            "name_original": "EAG Soil moisture",
+            "type": "Sensor",
+            "decimals": 2,
+            "unit": "%",
+            "ch": 4006,
+            "code": 19969,
+            "group": 25,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    30.36
+                ]
+            }
+        },
+        {
+            "name": "Volumetric Ionic Content 1",
+            "name_original": "Volumetric Ionic Content",
+            "type": "Sensor",
+            "decimals": 4,
+            "unit": "VIC",
+            "ch": 4007,
+            "code": 20228,
+            "group": 33,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    2132.869
+                ]
+            }
+        },
+        {
+            "name": "Volumetric Ionic Content 2",
+            "name_original": "Volumetric Ionic Content",
+            "type": "Sensor",
+            "decimals": 4,
+            "unit": "VIC",
+            "ch": 4008,
+            "code": 20228,
+            "group": 33,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    1636.582
+                ]
+            }
+        },
+        {
+            "name": "Volumetric Ionic Content 3",
+            "name_original": "Volumetric Ionic Content",
+            "type": "Sensor",
+            "decimals": 4,
+            "unit": "VIC",
+            "ch": 4009,
+            "code": 20228,
+            "group": 33,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    1492.3045
+                ]
+            }
+        },
+        {
+            "name": "Volumetric Ionic Content 4",
+            "name_original": "Volumetric Ionic Content",
+            "type": "Sensor",
+            "decimals": 4,
+            "unit": "VIC",
+            "ch": 4010,
+            "code": 20228,
+            "group": 33,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    1638.295
+                ]
+            }
+        },
+        {
+            "name": "Volumetric Ionic Content 5",
+            "name_original": "Volumetric Ionic Content",
+            "type": "Sensor",
+            "decimals": 4,
+            "unit": "VIC",
+            "ch": 4011,
+            "code": 20228,
+            "group": 33,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    1513.023
+                ]
+            }
+        },
+        {
+            "name": "Volumetric Ionic Content 6",
+            "name_original": "Volumetric Ionic Content",
+            "type": "Sensor",
+            "decimals": 4,
+            "unit": "VIC",
+            "ch": 4012,
+            "code": 20228,
+            "group": 33,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg"
+            ],
+            "values": {
+                "avg": [
+                    1512.337
+                ]
+            }
+        },
+        {
+            "name": "Soil temperature 1",
+            "name_original": "Soil temperature",
+            "type": "Sensor",
+            "decimals": 1,
+            "unit": "\u00b0C",
+            "ch": 4013,
+            "code": 17153,
+            "group": 3,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    34.2
+                ],
+                "max": [
+                    34.3
+                ],
+                "min": [
+                    34.1
+                ]
+            }
+        },
+        {
+            "name": "Soil temperature 2",
+            "name_original": "Soil temperature",
+            "type": "Sensor",
+            "decimals": 1,
+            "unit": "\u00b0C",
+            "ch": 4014,
+            "code": 17153,
+            "group": 3,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    31
+                ],
+                "max": [
+                    31
+                ],
+                "min": [
+                    31
+                ]
+            }
+        },
+        {
+            "name": "Soil temperature 3",
+            "name_original": "Soil temperature",
+            "type": "Sensor",
+            "decimals": 1,
+            "unit": "\u00b0C",
+            "ch": 4015,
+            "code": 17153,
+            "group": 3,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    29.3
+                ],
+                "max": [
+                    29.4
+                ],
+                "min": [
+                    29.3
+                ]
+            }
+        },
+        {
+            "name": "Soil temperature 4",
+            "name_original": "Soil temperature",
+            "type": "Sensor",
+            "decimals": 1,
+            "unit": "\u00b0C",
+            "ch": 4016,
+            "code": 17153,
+            "group": 3,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    28.7
+                ],
+                "max": [
+                    28.7
+                ],
+                "min": [
+                    28.7
+                ]
+            }
+        },
+        {
+            "name": "Soil temperature 5",
+            "name_original": "Soil temperature",
+            "type": "Sensor",
+            "decimals": 1,
+            "unit": "\u00b0C",
+            "ch": 4017,
+            "code": 17153,
+            "group": 3,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    28
+                ],
+                "max": [
+                    28.1
+                ],
+                "min": [
+                    28
+                ]
+            }
+        },
+        {
+            "name": "Soil temperature 6",
+            "name_original": "Soil temperature",
+            "type": "Sensor",
+            "decimals": 1,
+            "unit": "\u00b0C",
+            "ch": 4018,
+            "code": 17153,
+            "group": 3,
+            "serial": 3939,
+            "mac": "x",
+            "registered": "2022-06-23 13:31:22",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    28.3
+                ],
+                "max": [
+                    28.4
+                ],
+                "min": [
+                    28.3
+                ]
+            }
+        },
+        {
+            "name": "Midnight",
+            "type": "Calculation",
+            "unit": false,
+            "values": {
+                "result": [
+                    null
+                ]
+            }
+        }
+    ]
+}

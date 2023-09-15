@@ -29,6 +29,7 @@ type StationData struct {
 	Values              string `json:"values"`
 	LastUpdateUnix      string `json:"lastupdateunix"`
 	ClientExecutionUnix string `json:"clientexecutionunix"`
+	// credits 
 }
 
 // InitLedger adds a base set of assets to the ledger
