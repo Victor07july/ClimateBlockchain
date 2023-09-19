@@ -14,8 +14,8 @@ def loggerSetup(name, log_file, level=logging.INFO):
     
     return logger
 
-debugLogger = loggerSetup('debugar', 'testLog.txt', level=logging.DEBUG)
-infoLogger = logger = loggerSetup('informar', 'testLog.txt', level=logging.INFO)
+#debugLogger = loggerSetup('debugar', 'testLog.txt', level=logging.DEBUG)
+#infoLogger = loggerSetup('informar', 'testLog.txt', level=logging.INFO)
 
 #debugLogger.debug('mensagem debug')
 #infoLogger.info('mensagem info')

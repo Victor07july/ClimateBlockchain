@@ -40,14 +40,14 @@ def invoke(chaincodeName, *argv, insertTimestamp = False):
     # declarando array
     args = []
 
-    # loop nos parametros inseridos na função
+    # loop para pegar os parametros inseridos na função
     for arg in argv:
         args.append(arg)
 
     print(f'Inicializando chaincode {chaincodeName}')
 
 
-    # inserir tempo de execução unix caso desejado
+    # inserir tempo de execução unix caso insertTimeStamp = True
     args.append(str(clientExecutionUnix)) if insertTimestamp == True else print('Timestamp não inserido')
 
     response = loop.run_until_complete(c_hlf.chaincode_invoke(
@@ -63,3 +63,5 @@ def invoke(chaincodeName, *argv, insertTimestamp = False):
         ))
     print(f'Resposta: {response}')
     print(f'Execução do chaincode {chaincodeName} finalizada')
+
+    return response

@@ -25,11 +25,18 @@ Crie o canal com o comando:
 ./network.sh up createChannel -ca
 ```
 
+Caso deseje definir um nome para o canal (o padrão é mychannel), utilize:
+
+```
+./network.sh up createChannel -ca nomecanal
+```
+
 Implemente o chaincode com o comando:
 
 ```
-./network.sh deployCC -ccn fieldclimate -ccp contrato/fabpki -ccl go
+./network.sh deployCC -ccn fieldclimate -ccp contrato/BasicCRUD -ccl go
 ```
+
 Entre na pasta gateway
 
 ```

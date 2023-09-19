@@ -1,0 +1,122 @@
+2023-09-19 13:38:46,342 INFO ID da estação: 00206C61
+2023-09-19 13:38:46,342 INFO Iniciando loop...
+2023-09-19 13:38:46,343 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:38:46,343 INFO Leitura concluída
+2023-09-19 13:38:46,343 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:38:46,343 INFO Realizando chamada da API
+2023-09-19 13:38:47,311 INFO Chamada realizada com sucesso
+2023-09-19 13:38:47,311 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:38:47,312 INFO Comparando horários...
+2023-09-19 13:38:47,312 INFO Dados não atualizados.. Reiniciando em 5 minutos
+2023-09-19 13:39:13,116 INFO Processo encerrado pelo usuário
+2023-09-19 13:41:03,444 INFO ID da estação: 00206C61
+2023-09-19 13:41:03,444 INFO Iniciando loop...
+2023-09-19 13:41:03,445 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:41:03,445 INFO Leitura concluída
+2023-09-19 13:41:03,445 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:41:03,446 INFO Realizando chamada da API
+2023-09-19 13:41:04,413 INFO Chamada realizada com sucesso
+2023-09-19 13:41:04,414 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:41:04,414 INFO Comparando horários...
+2023-09-19 13:41:04,415 INFO Dados atualizados! Prosseguindo
+2023-09-19 13:41:04,415 INFO Horários: 2023-09-19 08:30:12 (antigo) 2023-09-19 08:30:00 (novo)
+2023-09-19 13:41:04,415 INFO Convertendo horário para unix
+2023-09-19 13:41:04,419 INFO Buscando dados do dispositivo no arquivo {stationID}_output.json
+2023-09-19 13:41:04,419 INFO Realizando invoke do chaincode com os dados do dispositivo
+2023-09-19 13:41:04,454 INFO Erro ao inserir dados na blockchain. Encerrando cliente.
+2023-09-19 13:45:51,468 INFO ID da estação: 00206C61
+2023-09-19 13:45:51,470 INFO Iniciando loop...
+2023-09-19 13:45:51,470 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:45:51,471 INFO Leitura concluída
+2023-09-19 13:45:51,471 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:45:51,471 INFO Realizando chamada da API
+2023-09-19 13:45:52,533 INFO Chamada realizada com sucesso
+2023-09-19 13:45:52,533 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:45:52,534 INFO Comparando horários...
+2023-09-19 13:45:52,534 INFO Dados atualizados! Prosseguindo
+2023-09-19 13:45:52,534 INFO Horários: 2023-09-19 08:30:12 (antigo) 2023-09-19 08:30:00 (novo)
+2023-09-19 13:45:52,534 INFO Convertendo horário para unix
+2023-09-19 13:45:52,537 INFO Buscando dados do dispositivo no arquivo {stationID}_output.json
+2023-09-19 13:45:52,537 INFO Realizando invoke do chaincode com os dados do dispositivo
+2023-09-19 13:45:54,686 INFO Sucesso! Reiniciando...
+2023-09-19 13:45:54,687 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:45:54,688 INFO Leitura concluída
+2023-09-19 13:45:54,688 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:45:54,689 INFO Realizando chamada da API
+2023-09-19 13:45:55,640 INFO Chamada realizada com sucesso
+2023-09-19 13:45:55,640 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:45:55,640 INFO Comparando horários...
+2023-09-19 13:45:55,641 INFO Dados não atualizados.. Reiniciando em 5 minutos
+2023-09-19 13:46:46,610 INFO Processo encerrado pelo usuário
+2023-09-19 13:46:48,809 INFO ID da estação: 00206C61
+2023-09-19 13:46:48,810 INFO Iniciando loop...
+2023-09-19 13:46:48,812 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:46:48,818 INFO Leitura concluída
+2023-09-19 13:46:48,818 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:46:48,818 INFO Realizando chamada da API
+2023-09-19 13:46:50,032 INFO Chamada realizada com sucesso
+2023-09-19 13:46:50,032 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:46:50,033 INFO Comparando horários...
+2023-09-19 13:46:50,033 INFO Dados atualizados! Prosseguindo
+2023-09-19 13:46:50,033 INFO Horários: 2023-09-19 08:30:12 (antigo) 2023-09-19 08:30:00 (novo)
+2023-09-19 13:46:50,034 INFO Convertendo horário para unix
+2023-09-19 13:46:50,037 INFO Buscando dados do dispositivo no arquivo {stationID}_output.json
+2023-09-19 13:46:50,038 INFO Realizando invoke do chaincode com os dados do dispositivo
+2023-09-19 13:46:52,203 INFO Sucesso! Reiniciando...
+2023-09-19 13:46:52,203 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:46:52,204 INFO Leitura concluída
+2023-09-19 13:46:52,204 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:46:52,204 INFO Realizando chamada da API
+2023-09-19 13:46:53,143 INFO Chamada realizada com sucesso
+2023-09-19 13:46:53,144 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:46:53,144 INFO Comparando horários...
+2023-09-19 13:46:53,144 INFO Dados não atualizados.. Reiniciando em 5 minutos
+2023-09-19 13:46:55,149 INFO Processo encerrado pelo usuário
+2023-09-19 13:47:39,268 INFO ID da estação: 00206C61
+2023-09-19 13:47:39,268 INFO Iniciando loop...
+2023-09-19 13:47:39,268 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:47:39,271 INFO Leitura concluída
+2023-09-19 13:47:39,272 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:47:39,272 INFO Realizando chamada da API
+2023-09-19 13:47:40,278 INFO Chamada realizada com sucesso
+2023-09-19 13:47:40,278 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:47:40,279 INFO Comparando horários...
+2023-09-19 13:47:40,280 INFO Dados atualizados! Prosseguindo
+2023-09-19 13:47:40,280 INFO Horários: 2023-09-19 08:30:12 (antigo) 2023-09-19 08:30:00 (novo)
+2023-09-19 13:47:40,280 INFO Convertendo horário para unix
+2023-09-19 13:47:40,282 INFO Buscando dados do dispositivo no arquivo {stationID}_output.json
+2023-09-19 13:47:40,283 INFO Realizando invoke do chaincode com os dados do dispositivo
+2023-09-19 13:47:44,512 INFO Sucesso! Reiniciando...
+2023-09-19 13:47:44,512 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:47:44,513 INFO Leitura concluída
+2023-09-19 13:47:44,513 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:47:44,513 INFO Realizando chamada da API
+2023-09-19 13:47:45,441 INFO Chamada realizada com sucesso
+2023-09-19 13:47:45,442 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:47:45,442 INFO Comparando horários...
+2023-09-19 13:47:45,442 INFO Dados não atualizados.. Reiniciando em 5 minutos
+2023-09-19 13:48:33,635 INFO Processo encerrado pelo usuário
+2023-09-19 13:48:35,786 INFO ID da estação: 00206C61
+2023-09-19 13:48:35,786 INFO Iniciando loop...
+2023-09-19 13:48:35,787 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:48:35,787 INFO Leitura concluída
+2023-09-19 13:48:35,788 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:48:35,788 INFO Realizando chamada da API
+2023-09-19 13:48:36,758 INFO Chamada realizada com sucesso
+2023-09-19 13:48:36,758 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:48:36,759 INFO Comparando horários...
+2023-09-19 13:48:36,759 INFO Dados atualizados! Prosseguindo
+2023-09-19 13:48:36,760 INFO Horários: 2023-09-19 08:30:12 (antigo) 2023-09-19 08:30:00 (novo)
+2023-09-19 13:48:36,760 INFO Convertendo horário para unix
+2023-09-19 13:48:36,764 INFO Buscando dados do dispositivo no arquivo {stationID}_output.json
+2023-09-19 13:48:36,764 INFO Realizando invoke do chaincode com os dados do dispositivo
+2023-09-19 13:48:40,984 INFO Sucesso! Reiniciando...
+2023-09-19 13:48:40,984 INFO Procurando arquivo JSON para leitura
+2023-09-19 13:48:40,985 INFO Leitura concluída
+2023-09-19 13:48:40,985 INFO Verificando último horário de atualização dos dados no JSON
+2023-09-19 13:48:40,985 INFO Realizando chamada da API
+2023-09-19 13:48:42,129 INFO Chamada realizada com sucesso
+2023-09-19 13:48:42,130 INFO Fazendo leitura do novo arquivo 00206C61_output.json
+2023-09-19 13:48:42,130 INFO Comparando horários...
+2023-09-19 13:48:42,130 INFO Dados não atualizados.. Reiniciando em 5 minutos
+2023-09-19 13:49:06,900 INFO Processo encerrado pelo usuário
