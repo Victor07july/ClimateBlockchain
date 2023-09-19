@@ -1,8 +1,9 @@
 import sys
 from datetime import datetime
 import json
-from fieldClimateAPI import APIConnect
+from modules.fieldClimateAPI import APIConnect
 from modules.chaincodeInvoke import invoke
+from modules.loggerSetup import loggerSetup
 
 domain = ["connection-org1"]
 channel_name = "mychannel"
@@ -18,7 +19,7 @@ APIConnect(stationID)
 
 # leitura do arquivo json
 with open(f'json/{stationID}_output.json', 'r') as file:
-    jsonFile = json.load(file)    
+    jsonFile = json.load(file)
 
 #NAVEGANDO NO JSON \/
 # pegando o horário de atualização dos dados do dispositivo na estação
