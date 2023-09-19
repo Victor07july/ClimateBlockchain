@@ -48,8 +48,6 @@ Chegamos na etapa de execução dos clientes. Começando pelo FieldClimate, aces
 cd fieldclimate
 ```
 
-```
-
 E insira o seguinte comando
 
 ```     
