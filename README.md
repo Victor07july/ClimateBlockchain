@@ -66,6 +66,14 @@ Para encerrar o loop, aperte CTRL + C no teclado (ou simplesmente feche o termin
 
 # Alerta Rio (ainda em construção)
 
+Similar a maneira como é acessada a pasta fieldclimate, acesse a pasta alertaRio pela pasta gateway
+
+```
+cd blockchain
+cd gateway
+cd alertario
+```
+
 Agora, para inicia-lo é necessário inserir um ID de estação disponível no [Alerta Rio](http://alertario.rio.rj.gov.br/tabela-de-dados/). Caso você insira um ID não disponível, o cliente irá retornar uma mensagem de erro e listar os IDs disponíveis para cada tabela no site.
 
 Para executar o cliente, insira o comando:
