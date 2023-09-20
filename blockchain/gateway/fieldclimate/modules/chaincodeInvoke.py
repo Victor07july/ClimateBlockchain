@@ -62,6 +62,6 @@ def invoke(chaincodeName, *argv, insertTimestamp = False):
         #cc_pattern="^invoked*"  # if you want to wait for chaincode event and you have a `stub.SetEvent("invoked", value)` in your chaincode
         ))
     print(f'Resposta: {response}')
-    print(f'Execução do chaincode {chaincodeName} finalizada')
+    print(f'Execução do chaincode {chaincodeName} finalizado')
 
     return response

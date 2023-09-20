@@ -7,6 +7,7 @@ from Crypto.Hash import SHA256
 from datetime import datetime
 from dateutil.tz import tzlocal
 import json
+import modules.keys as keys
 
 # Class to perform HMAC encoding
 class AuthHmacMetosGet(AuthBase):
@@ -32,8 +33,8 @@ def APIConnect(stationID='00206C61'):
     apiURI = 'https://api.fieldclimate.com/v2' # basta escolher se quer a api v1 ou v2
 
     # HMAC Authentication credentials
-    publicKey = '0b0989163ed6b703cd13904039b4731bea2788e76f51e20f'
-    privateKey = 'ec07663127f0f862d2fd91d32251b3667fde7c479cf3fd00'
+    publicKey = keys.publicKey
+    privateKey = keys.privateKey
 
     # Service/Route that you wish to call
     # Dependendo da chamada, vc precisa mudar o método (GET, POST, etc)
@@ -64,4 +65,3 @@ def APIConnect(stationID='00206C61'):
     #print(json_object)
 
     #print(json.dumps(response.json(), indent=2))
-
