@@ -76,5 +76,3 @@ if __name__ == "__main__":
 
     invoke('InsertStationData', stationID, deviceName, deviceType, unit, str(values), str(lastUpdatedUnix), insertTimestamp=True)
     invoke('ReadStationData', stationID, deviceName)
-
-infoLogger('Finalizando')

@@ -1,0 +1,305 @@
+{
+    "dates": [
+        "2023-10-17 13:00:00"
+    ],
+    "data": [
+        {
+            "name": "Solar Panel",
+            "name_original": "Solar Panel",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "mV",
+            "ch": 4,
+            "code": 30,
+            "group": 7,
+            "serial": "x",
+            "mac": "x",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    9825
+                ]
+            }
+        },
+        {
+            "name": "Battery",
+            "name_original": "Battery",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "mV",
+            "ch": 7,
+            "code": 7,
+            "group": 7,
+            "serial": "x",
+            "mac": "x",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    6770
+                ]
+            }
+        },
+        {
+            "name": "Diameter 1",
+            "name_original": "Diameter",
+            "type": "Sensor",
+            "decimals": 3,
+            "unit": "\u03bcm",
+            "ch": 10000,
+            "code": 33025,
+            "group": 48,
+            "serial": "x",
+            "mac": "x",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    10997
+                ],
+                "max": [
+                    10997
+                ],
+                "min": [
+                    10997
+                ]
+            }
+        },
+        {
+            "name": "Diameter 2",
+            "name_original": "Diameter",
+            "type": "Sensor",
+            "decimals": 3,
+            "unit": "\u03bcm",
+            "ch": 10001,
+            "code": 33025,
+            "group": 48,
+            "serial": "x",
+            "mac": "x",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    9709
+                ],
+                "max": [
+                    9709
+                ],
+                "min": [
+                    9709
+                ]
+            }
+        },
+        {
+            "name": "Diameter 3",
+            "name_original": "Diameter",
+            "type": "Sensor",
+            "decimals": 3,
+            "unit": "\u03bcm",
+            "ch": 10002,
+            "code": 33025,
+            "group": 48,
+            "serial": "x",
+            "mac": "x",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "avg",
+                "max",
+                "min"
+            ],
+            "values": {
+                "avg": [
+                    11000
+                ],
+                "max": [
+                    11000
+                ],
+                "min": [
+                    11000
+                ]
+            }
+        },
+        {
+            "name": "Sensor board battery",
+            "name_original": "Sensor board battery",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "mV",
+            "ch": 10003,
+            "code": 33798,
+            "group": 7,
+            "serial": "x",
+            "mac": "D88039A3241D",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    5053
+                ]
+            }
+        },
+        {
+            "name": "Yara water sensor serial number",
+            "name_original": "Yara water sensor serial number",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "",
+            "ch": 10011,
+            "code": 37889,
+            "group": 61,
+            "serial": "x",
+            "mac": "D88039A3241D",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    7006
+                ]
+            }
+        },
+        {
+            "name": "Yara Water Sensor - Turgor",
+            "name_original": "Yara water sensor turgor",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "",
+            "ch": 10012,
+            "code": 37890,
+            "group": 64,
+            "serial": "x",
+            "mac": "D88039A3241D",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    0
+                ]
+            }
+        },
+        {
+            "name": "Yara Water Sensor - Temperatura",
+            "name_original": "Yara water sensor temperature",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "",
+            "ch": 10013,
+            "code": 37891,
+            "group": 64,
+            "serial": "x",
+            "mac": "D88039A3241D",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    39592
+                ]
+            }
+        },
+        {
+            "name": "Yara water sensor serial number",
+            "name_original": "Yara water sensor serial number",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "",
+            "ch": 10014,
+            "code": 37889,
+            "group": 61,
+            "serial": "x",
+            "mac": "D88039A3241D",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    7010
+                ]
+            }
+        },
+        {
+            "name": "Yara Water Sensor - Turgor",
+            "name_original": "Yara water sensor turgor",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "",
+            "ch": 10015,
+            "code": 37890,
+            "group": 64,
+            "serial": "x",
+            "mac": "D88039A3241D",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    65535
+                ]
+            }
+        },
+        {
+            "name": "Yara Water Sensor - Temperatura",
+            "name_original": "Yara water sensor temperature",
+            "type": "Sensor",
+            "decimals": 0,
+            "unit": "",
+            "ch": 10016,
+            "code": 37891,
+            "group": 64,
+            "serial": "x",
+            "mac": "D88039A3241D",
+            "registered": "2023-10-09 22:20:11",
+            "vals": {},
+            "aggr": [
+                "last"
+            ],
+            "values": {
+                "last": [
+                    39708
+                ]
+            }
+        },
+        {
+            "name": "Midnight",
+            "type": "Calculation",
+            "unit": false,
+            "values": {
+                "result": [
+                    null
+                ]
+            }
+        }
+    ]
+}

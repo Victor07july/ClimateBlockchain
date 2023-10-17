@@ -13,6 +13,8 @@ Para mais detalhes, a documentação oficial do Hyperledger Fabric será um otim
 
 # Tutorial de como usar o cliente FieldClimate
 
+OBS: É necessário inserir suas próprias chaves pública e privada em blockchain/gateway/fieldclimate/modules/fieldclimateAPI.py
+
 Para começar, abra o terminal e acesse a pasta do projeto.
 A seguir abra a pasta "blockchain"
 

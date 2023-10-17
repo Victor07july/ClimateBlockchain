@@ -7,7 +7,7 @@ from Crypto.Hash import SHA256
 from datetime import datetime
 from dateutil.tz import tzlocal
 import json
-import modules.keys as keys
+import modules.keys as keys # comente esta linha no caso de inserir sua própria chave
 
 # Class to perform HMAC encoding
 class AuthHmacMetosGet(AuthBase):
@@ -32,7 +32,7 @@ def APIConnect(stationID='00206C61'):
     # Endpoint of the API, version for example: v1
     apiURI = 'https://api.fieldclimate.com/v2' # basta escolher se quer a api v1 ou v2
 
-    # HMAC Authentication credentials
+    # HMAC Authentication credentials (insira suas chaves aqui)
     publicKey = keys.publicKey
     privateKey = keys.privateKey
 
@@ -50,6 +50,7 @@ def APIConnect(stationID='00206C61'):
     elif response.status_code != 200:
         print(f"Um erro ocorreu ao buscar a estação. O ID inserido ({stationID}) está correto?")
         print(response.status_code)
+        print(response.json())
         exit()
 
 

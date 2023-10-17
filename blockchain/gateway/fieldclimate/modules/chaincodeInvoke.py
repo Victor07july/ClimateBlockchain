@@ -28,7 +28,7 @@ user = c_hlf.get_user('org1.example.com', 'User1')
 admin = c_hlf.get_user('org1.example.com', 'Admin')
 # print(admin)
 peers = []
-peer = c_hlf.get_peer('/home/stephanie/Inmetrochain-Vehicle/blockchain/gateway/connection-org1.json')
+peer = c_hlf.get_peer('peer0.org1.example.com')
 peers.append(peer)
 options = {'wallet': ''}
 
